@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>MJ Rank Counter 隐私政策</title>
+<style>
+  body{max-width:780px;margin:40px auto;padding:0 16px;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+  h1{font-size:26px;margin-bottom:0}.meta{color:#666;margin-top:4px}
+  h2{margin-top:28px}
+</style>
+<h1>MJ Rank Counter 隐私政策</h1>
+<div class="meta">最后更新：2025-08-11</div>
+
+<p>MJ Rank Counter（以下简称“本扩展”）仅用于在 midjourney.com 的“图像排名/教学”页面统计
+用户 <strong>当日参与排名的图片组数量</strong>（仅计 1/2，Skip/3 不计；支持 Undo），并在 <strong>UTC 午夜</strong>清零。</p>
+
+<h2>我们收集什么？</h2>
+<p>本扩展 <strong>不收集、不上传</strong>任何可识别个人的信息；不与任何第三方共享数据；不进行广告或追踪。</p>
+
+<h2>本地存储</h2>
+<p>仅使用浏览器本地 <code>chrome.storage.local</code> 保存以下数据：当日计数、每日目标值、悬浮窗位置、UTC 结算日期。
+这些数据均保留在本地设备，不会发送到外部服务器。</p>
+
+<h2>权限说明</h2>
+<ul>
+  <li><code>host_permissions</code>（midjourney.com）：仅在目标页面运行以识别“选择/跳过/撤销”操作并更新本地计数。</li>
+  <li><code>storage</code>：保存本地计数与设置。</li>
+  <li><code>alarms</code>：在 UTC 午夜触发本地清零。</li>
+</ul>
+
+<h2>远程代码</h2>
+<p>不使用远程代码。所有脚本随扩展打包并在本地执行，不从外部服务器下载或动态执行代码。</p>
+
+<h2>联系我们</h2>
+<p>如有问题，请联系：<a href="mailto:your-email@example.com">your-email@example.com</a></p>
+
+<hr>
+<h2>Privacy Policy (English)</h2>
+<p>This extension only tracks how many image pairs you ranked today on midjourney.com (counts 1/2 only, Skip/3 excluded, Undo supported) and resets at <strong>UTC midnight</strong>.</p>
+<p><strong>No data collection or sharing.</strong> The extension stores data locally via <code>chrome.storage.local</code> (today’s count, daily goal, HUD position, UTC reset date) and never sends it to any server.</p>
+<p><strong>Permissions:</strong> host permissions for midjourney.com (run on the ranking page), storage (local persistence), alarms (UTC reset).</p>
+<p><strong>No remotely hosted code.</strong> All scripts are bundled and executed locally.</p>
+<p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+</html>
